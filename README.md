@@ -3,7 +3,7 @@
 An interactive Streamlit page showing where rough diamonds lose their link to the mine, using the official
 **Kimberley Process** statistics (2019–2025) and The Knot's engagement-ring surveys.
 
-**Live app:** PASTE-YOUR-STREAMLIT-LINK-HERE
+**Live app:** https://loupe-diamonds.streamlit.app/
 
 ## What's on the page
 1. **The journey:** carats mined vs. imported vs. exported per country (producers vs. trading/cutting hubs).
