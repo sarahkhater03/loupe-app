@@ -25,7 +25,7 @@ PRODUCER_THRESHOLD = 0.25
 
 @st.cache_data
 def load_kp() -> tuple[pd.DataFrame, pd.DataFrame]:
-    df = pd.read_csv("data/kp_raw.csv")
+    df =    pd.read_csv("kp_raw.csv")
     totals = df[df["country"] == "TOTAL"].drop(columns="country").set_index("year").sort_index()
     df = df[df["country"] != "TOTAL"].copy()
     df = df[(df[["prod_cts", "imp_cts", "exp_cts"]].sum(axis=1)) > 0]
@@ -40,7 +40,7 @@ def load_kp() -> tuple[pd.DataFrame, pd.DataFrame]:
 
 @st.cache_data
 def load_lab() -> pd.DataFrame:
-    return pd.read_csv("data/lab_grown.csv")
+    return    pd.read_csv("lab_grown.csv")
 
 
 def per_carat(usd, cts):
